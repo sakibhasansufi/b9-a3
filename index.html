@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- tailwind and daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- customixation -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'color': '#FF4240',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a87a579ea0.js" crossorigin="anonymous"></script>
+
+    <style>
+      .manrope{
+        font-family: 'Manrope', sans-serif;
+      }
+    </style>
+
+</head>
+
+<body class="manrope">
+  <header class=" container mx-auto mt-6 px-6 lg:px-32">
+    <!-- nav -->
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost -ml-5 lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li class="text-color"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost lg:text-4xl font-extrabold -ml-5">Hockey<span class="text-color">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-color"><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end gap-4">
+          <div class="hidden lg:flex"><i class="fa-solid fa-magnifying-glass"></i></div>
+          
+          <a class=" lg:w-[110px] btn bg-color text-white font-bold">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+    <!-- carousel -->
+    <div class="carousel :w-full h-[550px] lg:mt-14">
+      <div id="slide1" class="carousel-item relative w-full ">
+        <img src="./B9A3-Hockeys-main/Images/1.png" class="w-full  lg:h-[550px]" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 ml-5 gap-3 top-[90%]">
+          <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
+          <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
+          
+        </div>
+      </div>
+      <div class="absolute  bg-black rounded-2xl p-4 lg:p-8 w-[270px] lg:w-[500px] top-[650px] lg:top-[450px] lg:left-[880px]">
+        <h2 class="text-white text-sm lg:text-2xl font-bold mb-4">Meet all the heroes from the field</h2>
+        <p class="text-white font-thin lg:font-medium"> In the realm of sports and achievement, the pursuit of victory culminates in the glorious moment of trophy-winning </p>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="./B9A3-Hockeys-main/Images/2.png" class="w-full lg:h-[550px]" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 ml-5 gap-3 top-[90%]">
+          <a href="#slide1" class="btn btn-circle  bg-black text-white">❮</a>
+          <a href="#slide3" class="btn btn-circle  bg-black text-white">❯</a>
+        </div>
+      </div>
+      <div class="absolute  bg-black rounded-2xl p-4 lg:p-8 w-[270px] lg:w-[500px] top-[650px] lg:top-[450px] lg:left-[880px]">
+        <h2 class="text-white text-sm lg:text-2xl font-bold mb-4">Meet all the heroes from the field</h2>
+        <p class="text-white font-thin lg:font-medium"> The sheer joy of playing sports lies in the exhilarating moments of skillful maneuvers </p>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="./B9A3-Hockeys-main/Images/3.png" class="w-full lg:h-[550px]" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 ml-5 gap-3 top-[90%]">
+          <a href="#slide2" class="btn btn-circle  bg-black text-white">❮</a>
+          <a href="#slide1" class="btn btn-circle  bg-black text-white">❯</a>
+        </div>
+      </div>
+      <div class="absolute  bg-black rounded-2xl p-4 lg:p-8 w-[270px] lg:w-[500px] top-[650px] lg:top-[450px] lg:left-[880px]">
+        <h2 class="text-white text-sm lg:text-2xl font-bold mb-4">Meet all the heroes from the field</h2>
+        <p class="text-white font-thin lg:font-medium"> In the realm of sports and achievement, the pursuit of victory culminates in the glorious moment of trophy-winning </p>
+      </div> 
+    </div>
+
+  </header>
+  <main class="container mx-auto px-32">
+
+  </main>
+</body>
+
+</html>
