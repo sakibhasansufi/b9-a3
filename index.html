@@ -25,14 +25,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-    <!-- font awesome -->
+  <!-- font awesome -->
     <script src="https://kit.fontawesome.com/a87a579ea0.js" crossorigin="anonymous"></script>
 
-    <style>
-      .manrope{
-        font-family: 'Manrope', sans-serif;
-      }
-    </style>
+  <style>
+    .manrope {
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .progress-ring__circle {
+      stroke-dasharray: 400, 400;
+      transition: stroke-dashoffset 0.35s;
+      transform: rotate(60deg);
+      transform-origin: 50% 50%;
+    }
+  </style>
 
 </head>
 
@@ -44,7 +51,10 @@
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost -ml-5 lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li class="text-color"><a>Home</a></li>
@@ -67,7 +77,7 @@
         </div>
         <div class="navbar-end gap-4">
           <div class="hidden lg:flex"><i class="fa-solid fa-magnifying-glass"></i></div>
-          
+
           <a class=" lg:w-[110px] btn bg-color text-white font-bold">Get Ticket</a>
         </div>
       </div>
@@ -79,13 +89,15 @@
         <div class="absolute flex justify-between transform -translate-y-1/2 ml-5 gap-3 top-[90%]">
           <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
           <a href="#slide2" class="btn btn-circle  bg-black text-white">❯</a>
-          
+
         </div>
       </div>
-      <div class="absolute  bg-black rounded-2xl p-4 lg:p-8 w-[270px] lg:w-[500px] top-[650px] lg:top-[450px] lg:left-[880px]">
+      <div
+        class="absolute  bg-black rounded-2xl p-4 lg:p-8 w-[270px] lg:w-[500px] top-[650px] lg:top-[450px] lg:left-[880px]">
         <h2 class="text-white text-sm lg:text-2xl font-bold mb-4">Meet all the heroes from the field</h2>
-        <p class="text-white font-thin lg:font-medium"> In the realm of sports and achievement, the pursuit of victory culminates in the glorious moment of trophy-winning </p>
-      </div> 
+        <p class="text-white font-thin lg:font-medium"> In the realm of sports and achievement, the pursuit of victory
+          culminates in the glorious moment of trophy-winning </p>
+      </div>
       <div id="slide2" class="carousel-item relative w-full">
         <img src="./B9A3-Hockeys-main/Images/2.png" class="w-full lg:h-[550px]" />
         <div class="absolute flex justify-between transform -translate-y-1/2 ml-5 gap-3 top-[90%]">
@@ -93,10 +105,12 @@
           <a href="#slide3" class="btn btn-circle  bg-black text-white">❯</a>
         </div>
       </div>
-      <div class="absolute  bg-black rounded-2xl p-4 lg:p-8 w-[270px] lg:w-[500px] top-[650px] lg:top-[450px] lg:left-[880px]">
+      <div
+        class="absolute  bg-black rounded-2xl p-4 lg:p-8 w-[270px] lg:w-[500px] top-[650px] lg:top-[450px] lg:left-[880px]">
         <h2 class="text-white text-sm lg:text-2xl font-bold mb-4">Meet all the heroes from the field</h2>
-        <p class="text-white font-thin lg:font-medium"> The sheer joy of playing sports lies in the exhilarating moments of skillful maneuvers </p>
-      </div> 
+        <p class="text-white font-thin lg:font-medium"> The sheer joy of playing sports lies in the exhilarating moments
+          of skillful maneuvers </p>
+      </div>
       <div id="slide3" class="carousel-item relative w-full">
         <img src="./B9A3-Hockeys-main/Images/3.png" class="w-full lg:h-[550px]" />
         <div class="absolute flex justify-between transform -translate-y-1/2 ml-5 gap-3 top-[90%]">
@@ -104,14 +118,122 @@
           <a href="#slide1" class="btn btn-circle  bg-black text-white">❯</a>
         </div>
       </div>
-      <div class="absolute  bg-black rounded-2xl p-4 lg:p-8 w-[270px] lg:w-[500px] top-[650px] lg:top-[450px] lg:left-[880px]">
+      <div
+        class="absolute  bg-black rounded-2xl p-4 lg:p-8 w-[270px] lg:w-[500px] top-[650px] lg:top-[450px] lg:left-[880px]">
         <h2 class="text-white text-sm lg:text-2xl font-bold mb-4">Meet all the heroes from the field</h2>
-        <p class="text-white font-thin lg:font-medium"> In the realm of sports and achievement, the pursuit of victory culminates in the glorious moment of trophy-winning </p>
-      </div> 
+        <p class="text-white font-thin lg:font-medium"> In the realm of sports and achievement, the pursuit of victory
+          culminates in the glorious moment of trophy-winning </p>
+      </div>
     </div>
 
   </header>
-  <main class="container mx-auto px-32">
+  <!-- main section -->
+  <main class="container mx-auto mt-52 lg:mt-32 px-6 lg:px-32">
+    <!-- hockey section -->
+    <section class="">
+      <div class="text-center space-y-4">
+        <h3 class="text-lg lg:text-4xl font-extrabold">Professional Hockeys Club</h3>
+        <p class="text-gray-400 text-base font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+          turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      </div>
+      <!-- radical progress section -->
+      <div class="flex-col lg:flex-row flex  justify-center lg:gap-16 lg:mt-20 ml-12 lg:ml-28">
+        <!-- radical progress 1 -->
+        <div class="mt-5">
+          <div class="relative h-40 w-40">
+            <svg class="h-full w-full" viewBox="0 0 100 100">
+              <!-- Background circle -->
+              <circle class="stroke-current text-gray-200" stroke-width="10" cx="50" cy="50" r="40" fill="transparent">
+              </circle>
+              <!-- Progress circle -->
+              <circle class="progress-ring__circle stroke-current text-red-500" stroke-width="10" stroke-linecap="round"
+                cx="50" cy="50" r="40" fill="transparent" stroke-dashoffset="calc(400 - (470 * 45) / 100)"></circle>
+
+              <!-- Center text -->
+              <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
+                alignment-baseline="middle">87%</text>
+            </svg>
+            
+          </div>
+          <div class="ml-4 mt-6 lg:w-[250px]">
+            <h2 class="text-xl font-semibold">Prayer Facility</h2>
+            <p class="mt-4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+        </div>
+
+        <!-- radical progress 2 -->
+        <div class="mt-5">
+          <div class="relative h-40 w-40">
+            <svg class="h-full w-full" viewBox="0 0 100 100">
+              <!-- Background circle -->
+              <circle class="stroke-current text-gray-200" stroke-width="10" cx="50" cy="50" r="40" fill="transparent">
+              </circle>
+              <!-- Progress circle -->
+              <circle class="progress-ring__circle rotate-[68deg] stroke-current text-green-500" stroke-width="10"
+                stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent"
+                stroke-dashoffset="calc(400 - (502 * 45) / 100)"></circle>
+  
+              <!-- Center text -->
+              <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
+                alignment-baseline="middle">95%</text>
+            </svg>
+          </div>
+          <div class="ml-4 mt-6 lg:w-[250px]">
+            <h2 class="text-xl font-semibold">Prayer Facility</h2>
+            <p class="mt-4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+        </div>
+        
+        <!-- radical progress 3 -->
+        <div class="mt-5">
+          <div class="relative h-40 w-40">
+            <svg class="h-full w-full" viewBox="0 0 100 100">
+              <!-- Background circle -->
+              <circle class="stroke-current text-gray-200" stroke-width="10" cx="50" cy="50" r="40" fill="transparent">
+              </circle>
+              <!-- Progress circle -->
+              <circle class="progress-ring__circle transform rotate-[65deg] stroke-current text-yellow-500"
+                stroke-width="10" stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent"
+                stroke-dashoffset="calc(400 - (485 * 45) / 100)"></circle>
+  
+              <!-- Center text -->
+              <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
+                alignment-baseline="middle">90%</text>
+            </svg>
+          </div>
+          <div class="ml-4 mt-6 lg:w-[250px]">
+            <h2 class="text-xl font-semibold mt-6">Prayer Facility</h2>
+            <p class="mt-4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+        </div>
+        
+        <!-- radical progress 4 -->
+        <div class="mt-5">
+          <div class="relative h-40 w-40">
+            <svg class="h-full w-full" viewBox="0 0 100 100">
+              <!-- Background circle -->
+              <circle class="stroke-current text-gray-200" stroke-width="10" cx="50" cy="50" r="40" fill="transparent">
+              </circle>
+              <!-- Progress circle -->
+              <circle class="progress-ring__circle transform rotate-[70deg] stroke-current text-blue-500"
+                stroke-width="10" stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent"
+                stroke-dashoffset="calc(400 - (515 * 45) / 100)"></circle>
+  
+              <!-- Center text -->
+              <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
+                alignment-baseline="middle">97%</text>
+            </svg>
+          </div>
+          <div class="ml-4 mt-6 lg:w-[250px]">
+            <h2 class="text-xl font-semibold mt-6">Prayer Facility</h2>
+            <p class="mt-4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          </div>
+        </div>
+        
+      </div>
+
+    </section>
+
 
   </main>
 </body>
